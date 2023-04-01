@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         val requestBody: RequestBody = jsonBody.toString().toRequestBody(JsonObject)
         val request: Request = Request.Builder()
             .url("https://api.openai.com/v1/images/generations")
-            .header("Authorization", "Bearer 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")
+            .header("Authorization", "Bearer API_KEY")
             .post(requestBody)
             .build()
 
